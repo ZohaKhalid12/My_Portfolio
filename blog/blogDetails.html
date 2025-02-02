@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoha-Khalid-Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="b1style.css"> <!-- Link to the CSS file -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="../index.html" style="color: rgb(0, 123, 255);">Home</a>
+            <a class="navbar-brand" href="blog.html" style="color: aliceblue;">Blogs</a>
+            <div class="ml-auto d-flex">
+                <a href="https://github.com/ZohaKhalid12" target="_blank" class="nav-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/zoha-khalid-942ba22a8" target="_blank" class="nav-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div>
+            <h1 style="font-family: 'Times New Roman', Times, serif ; font-size: 55px;" id="blog-title">Title</h1>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <p id="blog-content">Description</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="">
+        <h2 class="text-center" style="font-size: xxx-large; font-family:'Times New Roman', Times, serif;">
+            <b>Projects</b>
+        </h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title"
+                            style="font-size: xx-large; font-family: 'Times New Roman', Times, serif;">Hotel Management
+                            System</h5>
+                        <h6 class="card-text" style="font-size: larger;"><i>University Project - Programming
+                                Fundamentals.</i><br></h6>
+                        <p class="card-text">
+                            Developed a hotel management system in C++ for my programming fundamentals course,
+                            featuring core functionalities like room booking, customer management, and billing.<br>
+                            I used vectors for efficient data storage, file handling for record keeping,
+                            and implemented loops and switches for a seamless, menu-driven interface.<br>
+                            This project strengthened my understanding of essential programming concepts and coding
+                            structures.<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title"
+                            style="font-size: xx-large; font-family: 'Times New Roman', Times, serif;">Book
+                            Recommendation System</h5>
+                        <h6 class="card-text" style="font-size: larger;"><i>University Project - Introduction to Data
+                                Science.</i><br></h6>
+                        <p class="card-text">Developed a personalized book recommendation system using collaborative
+                            filtering.<br>
+                            Employed data preprocessing, exploratory data analysis (EDA),
+                            and feature engineering to refine the dataset.<br>
+                            Leveraged cosine similarity to find like-minded readers and suggest tailored book
+                            recommendations.<br>
+                            Enhanced user experience by analyzing user behavior and preferences.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card project-card">
+                    <div class="card-body">
+                        <h5 class="card-title"
+                            style="font-size: xx-large; font-family: 'Times New Roman', Times, serif;">Stocks'
+                            Prediction.</h5>
+                        <h6 class="card-text" style="font-size: larger;"><i>Self-Practice Project - ML & DL.</i><br>
+                        </h6>
+                        <p class="card-text">Developed a sophisticated stock price prediction model using LSTM neural
+                            networks.<br>
+                            Leveraged advanced statistical techniques to analyze historical stock data,
+                            uncovering hidden trends and seasonal patterns. <br>
+                            Visualized these patterns using time series plots and decomposition plots to gain deeper
+                            insights.<br>
+                            Fine-tuned the LSTM model to deliver accurate future price forecasts, empowering informed
+                            investment decisions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="text-center">
+        <p>&copy; 2024. All rights reserved.</p>
+        <p>Quick links:</p>
+        <p><a href="About me/aboutMe.html">About Me</a> | <a href="#projects">My Projects</a> | <a
+                href="#contact">Contact</a></p>
+        <div class="mt-2">
+            <a href="https://github.com/ZohaKhalid12" target="_blank" class="text-light"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/zoha-khalid-942ba22a8" target="_blank" class="text-light"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Blog Data (You can fetch this from an API later)
+        const blogs = {
+            1: { title: "The Rise of Quantum Computing: A Glimpse into the Future", content: "Quantum computing is revolutionizing problem-solving in fields like cryptography, optimization, and artificial intelligence. Unlike classical computers that use bits (0s and 1s), quantum computers use qubits, which can exist in multiple states simultaneously (superposition). This unique capability allows quantum computers to solve problems that would take classical supercomputers thousands of years.\n\n\nDespite its potential, quantum computing faces significant challenges. Qubits are extremely sensitive to their environment, leading to a high rate of errors. Quantum error correction is still an unsolved problem, and building stable quantum processors requires extreme cooling and highly controlled environments. Tech giants like Google, IBM, and Microsoft are investing heavily in quantum research to overcome these hurdles.\n\n\nIf quantum computing reaches maturity, it could break modern encryption, forcing us to develop quantum-resistant cryptographic methods. It could also revolutionize drug discovery by simulating molecular structures with high accuracy. While we’re still years away from mainstream quantum computers, their impact on industries will be profound, making this an exciting space to watch." },
+            2: { title: "Artificial Intelligence: From Narrow AI to General AI", content: "Artificial Intelligence (AI) has transformed from simple rule-based systems to deep learning models capable of outperforming humans in specific tasks. Today’s AI, known as Narrow AI, powers virtual assistants, recommendation engines, and autonomous vehicles. These systems can analyze vast amounts of data quickly but lack human-like understanding and reasoning.\n\n\nThe ultimate goal of AI research is Artificial General Intelligence (AGI)—machines that can perform any intellectual task that a human can. Unlike current AI, which is limited to predefined functions, AGI would be capable of learning, adapting, and making decisions independently. However, achieving AGI remains a challenge, as human intelligence is incredibly complex, involving emotions, reasoning, and creativity.\n\n\nWhile AGI could revolutionize industries like healthcare and robotics, it also raises ethical concerns. If AI surpasses human intelligence, how do we control it? What happens if it develops unintended biases or threatens jobs on a massive scale? Researchers are exploring AI ethics and regulation to ensure AI remains beneficial to humanity." },
+            3: { title: "Cybersecurity in the Digital Age: The Need for Zero Trust", content: "With cyber threats evolving rapidly, traditional security models are struggling to keep up. The rise of remote work, cloud computing, and IoT devices has expanded the attack surface, making organizations more vulnerable to breaches. Cybercriminals exploit weaknesses through phishing, ransomware, and supply chain attacks, leading to significant financial and data losses.\n\n\nTo address these risks, companies are adopting the Zero Trust security model. Unlike traditional perimeter-based security, where users inside a network are automatically trusted, Zero Trust requires continuous verification. Every user, device, and application must authenticate before accessing resources, reducing the chances of an internal attack.\n\n\nMajor companies like Google have successfully implemented Zero Trust, and governments are pushing for its widespread adoption. As cyber threats become more sophisticated, organizations must rethink their security strategies. Implementing multi-factor authentication, endpoint security, and least-privilege access can help build a stronger defense against cyberattacks." },
+            4: { title: "The Role of Blockchain Beyond Cryptocurrencies", content: "Blockchain is often associated with Bitcoin and other cryptocurrencies, but its applications go far beyond digital currency. It is a decentralized ledger that records transactions securely and transparently. This technology has the potential to transform industries like supply chain management, healthcare, and real estate.\n\n\nOne of blockchain’s biggest advantages is its immutability—once data is recorded, it cannot be altered without consensus. This makes it ideal for tracking goods in supply chains, verifying digital identities, and securing electronic voting systems. Many companies are leveraging blockchain to increase transparency and reduce fraud.\n\n\nDespite its promise, blockchain adoption faces challenges such as scalability, regulatory concerns, and energy consumption. Ethereum's transition to a proof-of-stake model aims to reduce energy use, making blockchain more sustainable. As technology evolves, blockchain could become a fundamental part of secure and transparent digital interactions." },
+            5: { title: "Web 3.0: The Next Evolution of the Internet", content: "The internet has evolved from static Web 1.0 pages to dynamic, user-driven Web 2.0 platforms. Now, Web 3.0 promises a decentralized, trustless internet powered by blockchain and smart contracts. Unlike Web 2.0, where tech giants control data, Web 3.0 gives users ownership over their digital assets and interactions.\n\n\nKey technologies driving Web 3.0 include blockchain, decentralized applications (dApps), and the Semantic Web. These innovations allow peer-to-peer transactions without intermediaries, increasing security and privacy. Cryptocurrencies, NFTs, and decentralized finance (DeFi) platforms are early examples of Web 3.0 applications reshaping industries.\n\n\nDespite its potential, Web 3.0 faces challenges such as scalability, regulatory scrutiny, and mass adoption barriers. Many users are unfamiliar with blockchain technology, and governments are still developing policies to regulate decentralized ecosystems. However, as Web 3.0 matures, it could redefine digital ownership, financial systems, and online interactions." },
+            6: { title: "The Future of Programming: Low-Code and No-Code Development", content: "Software development has traditionally required extensive coding knowledge, but low-code and no-code platforms are changing the landscape. These platforms enable users to build applications through visual interfaces, reducing the need for manual coding. Businesses are increasingly adopting these tools to accelerate development and reduce costs.\n\n\nLow-code platforms still require some coding knowledge, making them ideal for professional developers who want to streamline workflows. No-code platforms, on the other hand, empower non-programmers to create applications using drag-and-drop functionality. Companies like Bubble, OutSystems, and Microsoft Power Apps are leading the way in democratizing software development.\n\n\nWhile these platforms boost efficiency, they have limitations. Customization options may be restricted, and scalability can be a concern for complex applications. However, as AI and automation improve, low-code and no-code platforms could become essential tools for both businesses and independent developers." },
+            7: { title: "Ethical AI: Can Machines Be Fair and Unbiased?", content: "As AI becomes more integrated into our daily lives, concerns about bias and fairness have emerged. AI systems learn from vast amounts of data, but if that data contains biases, the AI can reinforce discrimination. This has been seen in biased hiring algorithms and racially prejudiced facial recognition software.\n\n\nAddressing AI bias requires transparency in model training and dataset selection. Researchers are developing techniques like fairness-aware machine learning, where algorithms are designed to minimize bias. Additionally, companies are investing in explainable AI (XAI) to ensure decision-making processes are clear and understandable.\n\n\nGovernments and organizations are working on ethical AI regulations to prevent discrimination and ensure fairness. The European Union’s AI Act and initiatives by tech giants aim to create standards for responsible AI development. As AI continues to evolve, ethical considerations must remain at the forefront to build trust in intelligent systems." },
+            8: { title: "The Role of Cloud Computing in Modern Software Development", content: "Cloud computing has transformed how businesses develop and deploy software. With services like AWS, Microsoft Azure, and Google Cloud, companies can host applications, store data, and scale resources without investing in expensive hardware. This has made software development more efficient and cost-effective.\n\n\nOne major advantage of cloud computing is flexibility. Developers can quickly spin up virtual machines, deploy applications globally, and integrate services like databases and AI models. The rise of serverless computing further reduces infrastructure management, allowing developers to focus solely on writing code.\n\n\nSecurity and compliance remain concerns in cloud adoption. Companies must ensure data encryption, proper access controls, and regulatory compliance when using cloud services. Despite these challenges, cloud computing continues to be the backbone of modern software development, enabling innovation at an unprecedented pace." },
+            9: { title: "Internet of Things (IoT): Connecting the Physical and Digital Worlds", content: "The Internet of Things (IoT) is revolutionizing industries by connecting everyday devices to the internet. Smart homes, industrial automation, and healthcare devices all leverage IoT to enhance efficiency and convenience. Sensors, cloud computing, and AI work together to collect and analyze real-time data from connected devices.\n\n\nOne of IoT’s biggest impacts is in smart cities, where connected traffic lights, environmental sensors, and surveillance cameras improve urban planning. In healthcare, IoT devices like smartwatches and remote monitoring systems help doctors track patient health in real-time, leading to better medical outcomes.\n\n\nHowever, IoT raises concerns about security and data privacy. With billions of devices connected, cybercriminals can exploit vulnerabilities to launch attacks. Companies must implement robust encryption, authentication mechanisms, and regular software updates to protect IoT networks from breaches." },
+            10: { title: "The Importance of Data Science in Decision Making", content: "Data science has become a crucial component of business intelligence, helping organizations make data-driven decisions. By analyzing large datasets, companies can identify trends, improve customer experiences, and optimize operations. Machine learning and statistical models play a key role in extracting meaningful insights from raw data.\n\n\nIn industries like healthcare, finance, and retail, data science is used to predict patient diseases, detect fraudulent transactions, and personalize marketing campaigns. Businesses leverage predictive analytics to forecast demand and optimize supply chains, improving overall efficiency.\n\n\nDespite its advantages, data science requires proper data governance. Poor data quality and biased models can lead to inaccurate predictions. Organizations must ensure data is clean, representative, and ethically sourced to make informed and reliable decisions." },
+            11: { title: "Augmented Reality (AR) and Virtual Reality (VR): The Next Digital Frontier", content: "Augmented Reality (AR) and Virtual Reality (VR) are reshaping how we interact with digital content. AR overlays digital information onto the real world, while VR immerses users in fully virtual environments. These technologies are widely used in gaming, training, and healthcare.\n\n\nIndustries beyond gaming are leveraging AR and VR for practical applications. In healthcare, surgeons use AR to visualize anatomy before procedures, while in real estate, VR tours allow potential buyers to explore properties remotely. The education sector is also adopting these technologies for immersive learning experiences.\n\n\nChallenges like hardware limitations and motion sickness hinder mainstream adoption. However, advancements in lightweight AR glasses and high-resolution VR headsets are addressing these issues. As technology progresses, AR and VR could become an integral part of daily life, enhancing entertainment, work, and education." },
+            12: { title: "The Role of DevOps in Modern Software Development", content: "DevOps combines development and IT operations to enhance collaboration and automate software delivery. By integrating continuous integration/continuous deployment (CI/CD) pipelines, teams can release software faster and with fewer errors. This approach bridges the gap between developers and operations teams.\n\n\nAutomation is a core principle of DevOps. Tools like Jenkins, Docker, and Kubernetes streamline development processes, reducing manual intervention. Infrastructure as Code (IaC) further simplifies deployment by allowing developers to manage infrastructure through scripts.\n\n\nAdopting DevOps improves software quality, security, and scalability. However, it requires a cultural shift within organizations. Teams must embrace collaboration, continuous learning, and process improvements to fully reap DevOps’ benefits in modern software development." },
+            13: { title: "Quantum Computing: The Future of High-Speed Processing", content: "Quantum computing is set to revolutionize problem-solving by leveraging the principles of quantum mechanics. Unlike classical computers that use bits (0s and 1s), quantum computers use qubits, which can exist in multiple states simultaneously. This allows quantum computers to perform complex calculations exponentially faster than traditional machines.\n\n\nOne of the most promising applications of quantum computing is cryptography. Quantum algorithms like Shor’s algorithm could break existing encryption methods, leading to a need for quantum-resistant cryptography. Additionally, quantum computing can enhance drug discovery, climate modeling, and optimization problems in logistics.\n\n\nDespite its potential, quantum computing faces challenges such as error rates, hardware stability, and the need for extremely low temperatures. Researchers are actively working on improving quantum error correction and making quantum processors more scalable. As advancements continue, quantum computing may unlock new possibilities in fields that require immense computational power." },
+            14: { title: "Cybersecurity in the Age of AI", content: "As AI continues to evolve, both cybersecurity threats and defenses are becoming more sophisticated. Hackers are using AI-driven attacks to bypass security measures, making traditional defenses obsolete. AI-powered malware and deepfake technology can create convincing phishing scams, increasing cyber risks.\n\n\nOn the flip side, AI is also strengthening cybersecurity by detecting and preventing attacks in real-time. Machine learning models can analyze vast amounts of data to identify anomalies and suspicious activities. Automated threat detection tools are improving response times and reducing human error in cybersecurity operations.\n\n\nHowever, AI-driven cybersecurity comes with challenges. Bias in training data, adversarial attacks on AI models, and ethical concerns about surveillance are key issues. Organizations must strike a balance between automation and human oversight to build robust, ethical cybersecurity systems." },
+            15: { title: "The Rise of Edge Computing: Processing Data Closer to the Source", content: "Edge computing is transforming how data is processed by bringing computation closer to the source instead of relying on centralized cloud servers. This reduces latency, improves response times, and enhances real-time data processing, making it ideal for IoT applications.\n\n\nIndustries such as healthcare, autonomous vehicles, and smart cities benefit from edge computing. In autonomous driving, edge computing enables instant decision-making, reducing delays caused by cloud-based processing. Similarly, in healthcare, edge devices allow real-time patient monitoring without depending on external servers.\n\n\nDespite its advantages, edge computing faces security challenges. With more devices processing data independently, vulnerabilities increase. Implementing strong encryption, device authentication, and regular software updates is essential to maintain data integrity in edge networks." },
+            16: { title: "Blockchain Beyond Cryptocurrency: Real-World Applications", content: "Blockchain technology is often associated with cryptocurrencies, but its potential extends far beyond digital assets. At its core, blockchain is a decentralized, tamper-proof ledger that enhances transparency and security in various industries.\n\n\nIn supply chain management, blockchain ensures product authenticity and traceability by recording each transaction on an immutable ledger. In healthcare, patient records can be securely stored and shared without intermediaries. Voting systems can also benefit from blockchain by preventing fraud and ensuring election transparency.\n\n\nDespite its advantages, blockchain adoption faces scalability and regulatory hurdles. Public blockchains struggle with transaction speeds, while governments are still defining policies for blockchain-based systems. As solutions emerge, blockchain is expected to play a crucial role in securing digital transactions and data sharing across industries." },
+            17: { title: "The Growing Role of AI in Healthcare", content: "Artificial Intelligence is transforming healthcare by enhancing diagnostics, treatment planning, and patient care. AI-powered tools can analyze medical images, detect diseases early, and recommend personalized treatments, improving healthcare outcomes.\n\n\nMachine learning algorithms assist radiologists in detecting tumors in X-rays and MRIs with high accuracy. AI chatbots and virtual assistants provide 24/7 patient support, reducing the workload on healthcare professionals. Robotic surgeries powered by AI are also improving precision and reducing recovery times.\n\n\nHowever, AI adoption in healthcare faces challenges such as data privacy concerns, algorithmic bias, and regulatory approval. Ensuring that AI models are trained on diverse datasets and comply with healthcare regulations is crucial for ethical and effective AI integration in medicine." },
+            18: { title: "Ethical Hacking: Strengthening Security Through Penetration Testing", content: "Ethical hacking, also known as penetration testing, involves legally testing systems for vulnerabilities before cybercriminals exploit them. Ethical hackers use the same techniques as malicious attackers but with the intent of improving security.\n\n\nOrganizations hire ethical hackers to identify weaknesses in their networks, applications, and infrastructure. Through simulated attacks, these professionals uncover security flaws and help businesses patch them before real threats occur. Certifications like CEH (Certified Ethical Hacker) validate skills in ethical hacking.\n\n\nWhile ethical hacking enhances security, it also raises ethical concerns. Companies must clearly define the scope of penetration testing to avoid legal issues. Ethical hackers must follow strict guidelines and obtain permission before conducting security assessments." },
+            19: { title: "The Evolution of Programming Languages: From Assembly to AI-Powered Code", content: "Programming languages have evolved significantly, from early low-level languages like Assembly to modern AI-assisted coding tools. This evolution has made software development more efficient and accessible to a broader audience.\n\n\nHigh-level languages like Python, JavaScript, and Go have simplified development, enabling faster coding with better readability. Meanwhile, AI-powered tools like GitHub Copilot and OpenAI’s Codex assist developers by suggesting code snippets, automating repetitive tasks, and improving productivity.\n\n\nAs programming languages continue to evolve, the focus is shifting toward automation and natural language processing. The future may see AI-driven development environments where coding is done through conversational commands rather than traditional syntax." },
+            20: { title: "The Importance of Open-Source Software in Tech Innovation", content: "Open-source software (OSS) has revolutionized the tech industry by fostering collaboration and innovation. Projects like Linux, Apache, and Kubernetes have enabled businesses to build scalable, cost-effective solutions without relying on proprietary software.\n\n\nOne of the biggest advantages of OSS is community-driven development. Developers worldwide contribute to projects, improving security, fixing bugs, and adding new features. Companies like Google, Microsoft, and IBM actively support open-source initiatives, recognizing their value in accelerating technological advancements.\n\n\nDespite its benefits, open-source software faces challenges like security vulnerabilities and funding sustainability. Maintaining large OSS projects requires dedicated contributors and financial support. However, with increasing corporate sponsorship and public funding models, open-source software continues to thrive as a foundation for modern technology." },
+            21: { title: "The Role of Artificial Intelligence in Cybersecurity", content: "Artificial intelligence (AI) is transforming cybersecurity by enabling automated threat detection and response. With cyber threats becoming more sophisticated, AI-driven security solutions help organizations stay ahead of attackers. AI algorithms analyze vast amounts of data in real-time, identifying anomalies that may indicate security breaches. This proactive approach significantly reduces the time required to detect and mitigate threats.\n\n\nAI-powered security tools leverage machine learning to continuously improve their ability to recognize new and emerging threats. Traditional security measures, such as rule-based detection systems, struggle to keep up with evolving attack methods. In contrast, AI adapts to new patterns, making it more effective in preventing cyberattacks. Many organizations now integrate AI into their cybersecurity infrastructure to enhance resilience against threats like phishing, ransomware, and insider attacks.\n\n\nHowever, AI also introduces new challenges. Cybercriminals are now using AI to automate attacks, making them more difficult to detect. Ethical concerns arise regarding AI decision-making in cybersecurity, as false positives or negatives can have serious consequences. To maximize AI's potential, organizations must balance automation with human oversight, ensuring that security measures remain effective and responsible." },
+            22: { title: "The Rise of Low-Code and No-Code Development", content: 'Low-code and no-code platforms are revolutionizing software development by allowing users to build applications with little or no coding knowledge. These platforms provide visual development interfaces, drag-and-drop components, and pre-built integrations that simplify the creation of software solutions. This trend is making software development more accessible to business professionals, educators, and entrepreneurs.\n\n\nThe primary advantage of low-code and no-code development is speed. Traditional software development often requires months of planning and execution, but low-code solutions enable faster deployment. Organizations can quickly create custom applications to meet their specific needs, reducing dependency on large development teams. This approach is especially beneficial for small businesses and startups that lack the resources for traditional development.\n\n\nDespite its advantages, low-code and no-code development comes with limitations. While these platforms enable rapid prototyping, they may lack the flexibility needed for complex applications. Security risks can also arise when non-technical users build applications without proper oversight. However, as these platforms continue to evolve, they are expected to play an increasingly important role in the future of software development.' },
+            23: { title: "How Blockchain is Revolutionizing Digital Transactions", content: 'Blockchain technology is reshaping the way digital transactions are conducted, offering enhanced security, transparency, and decentralization. Initially developed as the backbone of cryptocurrencies like Bitcoin, blockchain has expanded into industries such as finance, healthcare, and supply chain management. Its decentralized nature eliminates the need for intermediaries, reducing costs and increasing efficiency.\n\n\nOne of the most significant advantages of blockchain is its security. Transactions recorded on a blockchain are immutable, meaning they cannot be altered or tampered with. This makes blockchain an ideal solution for securing financial transactions, verifying identities, and preventing fraud. Smart contracts, which execute automatically when conditions are met, further enhance the reliability and efficiency of blockchain applications.\n\n\nDespite its potential, blockchain faces challenges such as scalability, regulatory uncertainty, and energy consumption. Processing large volumes of transactions on a blockchain network can be slow and costly. Additionally, governments and financial institutions are still navigating how to regulate blockchain-based systems. However, as blockchain technology continues to mature, it is expected to become a cornerstone of the digital economy.' },
+            24: { title: "The Growing Impact of Edge Computing", content: "Edge computing is changing the way data is processed by shifting computation closer to the source of data generation. Unlike traditional cloud computing, which relies on centralized data centers, edge computing processes data at the network's edge, reducing latency and improving performance. This shift is particularly crucial for applications that require real-time processing, such as IoT devices, autonomous vehicles, and smart cities.\n\n\nThe key benefit of edge computing is speed. By processing data closer to where it is generated, devices can respond faster to inputs, improving efficiency and reducing the need for constant cloud connectivity. This approach is especially valuable in industries like healthcare, where real-time data processing can be critical for patient monitoring and diagnostics.\n\n\nDespite its advantages, edge computing presents challenges related to security and infrastructure. Distributing computing power across multiple locations increases the attack surface for cyber threats. Additionally, implementing edge computing requires robust networking infrastructure to ensure seamless data flow between edge devices and central systems. As technology advances, edge computing is expected to play a vital role in enabling faster, more efficient digital ecosystems." },
+        };
+
+        // Get URL Parameter
+        const params = new URLSearchParams(window.location.search);
+        const blogId = params.get("id");
+
+        // Update the Page Content
+        if (blogs[blogId]) {
+            document.getElementById("blog-title").innerText = blogs[blogId].title;
+            document.getElementById("blog-content").innerText = blogs[blogId].content;
+        } else {
+            document.getElementById("blog-title").innerText = "Blog Not Found";
+            document.getElementById("blog-content").innerText = "The requested blog does not exist.";
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
